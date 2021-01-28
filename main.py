@@ -4,6 +4,11 @@ import requests
 app = Flask(__name__)
 
 
+@app.route("/egg")
+def egg() :
+    return render_template('egg.html')
+
+
 @app.route("/")
 def home():
     return render_template('home.html')
